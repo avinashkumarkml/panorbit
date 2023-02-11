@@ -24,7 +24,7 @@ const LandingPage = () => {
       <div className={styles.users}>
         {userData.map((user) => {
           return (
-            <Link to="/homepage" className={styles.links}>
+            <Link to="/homepage/profile" className={styles.links}>
               <div
                 className={styles.user}
                 onClick={() => {
