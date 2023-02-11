@@ -6,57 +6,57 @@ const Profile = () => {
       <div className={styles.content}>
         <div className={styles.userdata}>
           <img src={user.profilepicture} alt="" />
-          <h4>{user.name}</h4>
+          <h2 className={styles.username}>{user.name}</h2>
           <div className={styles.item}>
-            <span className={styles.label}>Username</span> :
+            <span className={styles.label}>Username</span>  :
             <span className={styles.name}>{user.name}</span>{" "}
           </div>
           <div>
-            <span className={styles.label}>e-mail</span> :
-            <span className={styles.name}>{user.email}</span>
+            <span className={styles.label}>e-mail</span>   :
+            <span className=  {styles.name}>{user.email}</span>
           </div>
           <div>
-            <span className={styles.label}>Phone</span> :{" "}
+            <span className={styles.label}>Phone</span>  :{" "}
             <span className={styles.name}>{user.phone}</span>{" "}
           </div>
           <div>
-            <span className={styles.label}>Website</span> :{" "}
+            <span className={styles.label}>Website</span>   :{" "}
             <span className={styles.name}>{user.website}</span>{" "}
           </div>
           <hr />
-          <p>Company</p>
+          <p className={styles.companyname}>Company</p>
           <div>
-            <span className={styles.label}>Name</span> :{" "}
+            <span className={styles.label}>Name</span>   :{" "}
             <span className={styles.name}>{user.company.name}</span>{" "}
           </div>
 
           <div>
-            <span className={styles.label}>Catchphrase</span> :{" "}
+            <span className={styles.label}>Catchphrase</span>   :{" "}
             <span className={styles.name}>{user.company.catchPhrase}</span>{" "}
           </div>
 
           <div>
-            <span className={styles.label}>bs</span> :{" "}
+            <span className={styles.label}>bs</span>   :{" "}
             <span className={styles.name}>{user.company.bs}</span>{" "}
           </div>
         </div>
         <div className={styles.map}>
-          <p>Address</p>
+          <p className={styles.addressname}>Address</p>
           <div>
-            <span className={styles.label}>Street</span> :{" "}
+            <span className={styles.label}>Street</span>   :{" "}
             <span className={styles.name}>{user.address.street}</span>{" "}
           </div>
 
           <div>
-            <span className={styles.label}>Suite</span> :{" "}
+            <span className={styles.label}>Suite</span>   :{" "}
             <span className={styles.name}>{user.address.suite}</span>{" "}
           </div>
           <div>
-            <span className={styles.label}>City</span> :{" "}
+            <span className={styles.label}>City</span>   :{" "}
             <span className={styles.name}>{user.address.city}</span>{" "}
           </div>
           <div>
-            <span className={styles.label}>Zipcode</span> :{" "}
+            <span className={styles.label}>Zipcode</span>   :{" "}
             <span className={styles.name}>{user.address.zipcode}</span>{" "}
           </div>
 

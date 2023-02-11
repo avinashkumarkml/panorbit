@@ -1,6 +1,20 @@
 .content {
   height: 80%;
   display: flex;
+  /* color: gray; */
+}
+.username{
+  color: gray;
+}
+.companyname{
+  color: gray;
+  font-size: 1.4rem;
+  
+}
+.addressname{
+  color: gray;
+  font-size: 1.4rem;
+  margin-top: 10px;
 }
 .userdata {
   flex: 4;
@@ -23,10 +37,16 @@
   font-size: 1.4rem;
   color: rgb(139, 137, 137);
   margin: 30px 0;
+  
+
 }
 .name {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   /* border: 1px solid gray; */
+  color:#696969 ;
+  font-weight: bold;
+  /* font-weight: lighter; */
+
 }
 .map {
   flex: 6;
@@ -79,8 +99,9 @@ hr + p {
 .latlong {
   display: flex;
   position: absolute;
-  bottom: 10px;
-  right: 70px;
+  bottom: -62px;
+  right: 22px;
+  /* border: 1px solid black; */
 }
 .latlong > div {
   margin: 10px;
