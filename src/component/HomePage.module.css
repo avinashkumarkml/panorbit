@@ -1,8 +1,19 @@
+:root {
+  --translatevalue: 230px;
+}
+.active{
+  font-weight: bold;
+  color: white;
+
+}
 .container {
   width: 95%;
   margin: auto;
   height: 100vh;
   display: flex;
+  position: relative;
+  overflow: hidden;
+  
 }
 
 .sidebar {
@@ -17,13 +28,16 @@
   align-items: center;
 
 }
-.sidebar>div{
+.sidebar div{
     width: 100%;
     text-align: center;
     border-bottom: 1px solid gray;
     padding: 5px 0;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+}
+.sidebar span{
+  font-size: 1.1rem;
 }
 .mainContent {
   flex: 8;
@@ -117,4 +131,36 @@ border-bottom: 1px solid rgb(227, 221, 221);
   font-weight: bold;
   margin-top: 20px;
   cursor: pointer;
+}
+.chat{
+  transform: translateY( var(--translatevalue));
+  width:250px;
+  position: absolute;
+  bottom:0;
+  right: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.chatheader{
+  background-color: #4352c8;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+}
+.users{
+  height: 230px;
+  overflow-y: scroll;
+}
+.user{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.user>img{
+  width:30px;
+  border-radius: 50%;
 }

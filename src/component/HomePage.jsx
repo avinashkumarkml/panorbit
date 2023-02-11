@@ -4,27 +4,46 @@ import Profile from "./Profile";
 import Posts from "./Posts";
 import Gallery from "./Gallery";
 import Todo from "./Todo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
+  let root=document.querySelector(":root")
+
+  // document.querySelector(".chatheader").addEventListener("click",)
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
   let user = JSON.parse(localStorage.getItem("user"));
   let { id } = useParams();
+  const [userData, setUserData] = useState([]);
+
+  const fetchUsers = async () => {
+    try {
+      let users = await fetch("https://panorbit.in/api/users.json");
+      users = await users.json();
+      setUserData(users.users);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchUsers();
+  }, []);
+  console.log(userData)
   return (
     <div className={styles.container}>
       <div className={styles.sidebar}>
         <Link to="/homepage/profile" className={styles.links}>
-          <div>Profile</div>
+          <div className={styles.active}><span>Profile</span></div>
         </Link>
         <Link to="/homepage/posts" className={styles.links}>
-          <div>Posts</div>
+          <div><span>Posts</span></div>
         </Link>
         <Link to="/homepage/gallery" className={styles.links}>
-          <div>Gallery</div>
+          <div><span>Gallery</span></div>
         </Link>
         <Link to="/homepage/todo" className={styles.links}>
-          <div>Todo</div>
+          <div><span>Todo</span></div>
         </Link>
       </div>
       <div className={styles.mainContent}>
@@ -64,6 +83,28 @@ const HomePage = () => {
           {id === "posts" && <Posts />}
           {id === "gallery" && <Gallery />}
           {id === "todo" && <Todo />}
+        </div>
+      </div>
+      <div className={styles.chat}>
+        <div className={styles.chatheader} onClick={()=>{
+    let tranlateValue=getComputedStyle(root).getPropertyValue("--translatevalue");
+    if(tranlateValue==="230px"){
+
+      root.style.setProperty("--translatevalue","0px")
+    }else{
+      root.style.setProperty("--translatevalue","230px")
+
+    }
+
+
+}}>Chat</div>
+        <div className={styles.users}>
+          {userData.map(user=>
+            <div className={styles.user}>
+              <img src={user.profilepicture} alt="" />
+              <span>{user.name}</span>
+            </div>
+          )}
         </div>
       </div>
     </div>
