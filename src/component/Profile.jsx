@@ -31,7 +31,7 @@ const Profile = () => {
           </div>
 
           <div>
-            <span className={styles.label}>catchphrase</span> :{" "}
+            <span className={styles.label}>Catchphrase</span> :{" "}
             <span className={styles.name}>{user.company.catchPhrase}</span>{" "}
           </div>
 

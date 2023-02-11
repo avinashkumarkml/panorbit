@@ -1,10 +1,9 @@
 :root {
   --translatevalue: 230px;
 }
-.active{
+.active {
   font-weight: bold;
   color: white;
-
 }
 .container {
   width: 95%;
@@ -12,92 +11,95 @@
   height: 100vh;
   display: flex;
   position: relative;
-  overflow: hidden;
-  
+  /* overflow: hidden; */
 }
 
 .sidebar {
-  flex: 2;
+  flex: 1.8;
   background-color: #4352c8;
-  height: 90%;
-  margin: auto;
-  border-radius:30px;
+  height: 120%;
+  /* margin: auto; */
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid red; */
+  margin-top: 20px;
 
 }
-.sidebar div{
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid gray;
-    padding: 5px 0;
-    color: white;
-    font-size: 1.4rem;
+.sidebar div {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding: 5px 0;
+  color: white;
+  font-size: 1.5rem;
 }
-.sidebar span{
-  font-size: 1.1rem;
+.sidebar span {
+  font-size: 1.2rem;
 }
 .mainContent {
   flex: 8;
 }
 
-.nav{
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-top: 20px;
-height: 70px;padding-left: 20px;
-padding-right: 20px;
-border-bottom: 1px solid rgb(227, 221, 221);
-
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid rgb(227, 221, 221);
 }
-.profile{
+.profile {
   width: 10%;
 }
-.profile>img{
+.profile > img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   margin: 15px;
   cursor: pointer;
 }
-.profile>img+h6{
+.profile > img + h6 {
   cursor: pointer;
 }
-.links{
-  color:black;
+.links {
+  color: black;
   text-decoration: none;
 }
-.profile{
+.profile {
   height: 100%;
   position: relative;
   display: flex;
   align-items: center;
 }
-.popup{
+.popup {
   position: absolute;
-  top:100%;
-  right:0;
+  top: 100%;
+  right: 0;
   color: black;
   width: 200%;
   z-index: 2;
   background-color: white;
-  border-radius:10px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  padding:40px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.popup>img{
+.popup > img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
 }
-.popup>div{
+.popup > div {
   width: 100%;
   display: flex;
   align-items: center;
@@ -105,24 +107,24 @@ border-bottom: 1px solid rgb(227, 221, 221);
   margin-top: 20px;
   border-top: 1px solid rgb(223, 220, 220);
 }
-.popup>div>img{
+.popup > div > img {
   width: 40px;
   height: 40px;
-  border-radius:50%;
+  border-radius: 50%;
   margin: 10px;
 }
-.popup>p{
+.popup > p {
   margin: 0;
   margin-top: 5px;
 }
-.popup .email{
+.popup .email {
   color: rgb(162, 158, 158);
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 10px;
 }
-.popup>button{
-  background-color:red;
+.popup > button {
+  background-color: red;
   border: none;
   color: white;
   width: 80px;
@@ -132,35 +134,36 @@ border-bottom: 1px solid rgb(227, 221, 221);
   margin-top: 20px;
   cursor: pointer;
 }
-.chat{
-  transform: translateY( var(--translatevalue));
-  width:250px;
-  position: absolute;
-  bottom:0;
+.chat {
+  transform: translateY(var(--translatevalue));
+  width: 250px;
+  position: fixed;
+  bottom: 0;
   right: 50px;
   border-radius: 8px;
-  overflow: hidden;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
-.chatheader{
+
+.chatheader {
   background-color: #4352c8;
   padding: 15px;
   color: white;
   cursor: pointer;
 }
-.users{
+.users {
   height: 230px;
   overflow-y: scroll;
 }
-.user{
+.user {
   display: flex;
   align-items: center;
   padding: 5px;
   cursor: pointer;
   margin-bottom: 5px;
 }
-.user>img{
-  width:30px;
+.user > img {
+  width: 30px;
   border-radius: 50%;
 }

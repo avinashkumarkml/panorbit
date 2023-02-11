@@ -7,7 +7,7 @@ import Todo from "./Todo";
 import { useEffect, useState } from "react";
 
 const HomePage = () => {
-  let root=document.querySelector(":root")
+  let root = document.querySelector(":root");
 
   // document.querySelector(".chatheader").addEventListener("click",)
   const [showModal, setShowModal] = useState(false);
@@ -29,21 +29,29 @@ const HomePage = () => {
   useEffect(() => {
     fetchUsers();
   }, []);
-  console.log(userData)
+  console.log(userData);
   return (
     <div className={styles.container}>
       <div className={styles.sidebar}>
         <Link to="/homepage/profile" className={styles.links}>
-          <div className={styles.active}><span>Profile</span></div>
+          <div className={styles.active}>
+            <span>Profile</span>
+          </div>
         </Link>
         <Link to="/homepage/posts" className={styles.links}>
-          <div><span>Posts</span></div>
+          <div>
+            <span>Posts</span>
+          </div>
         </Link>
         <Link to="/homepage/gallery" className={styles.links}>
-          <div><span>Gallery</span></div>
+          <div>
+            <span>Gallery</span>
+          </div>
         </Link>
         <Link to="/homepage/todo" className={styles.links}>
-          <div><span>Todo</span></div>
+          <div>
+            <span>Todo</span>
+          </div>
         </Link>
       </div>
       <div className={styles.mainContent}>
@@ -86,25 +94,31 @@ const HomePage = () => {
         </div>
       </div>
       <div className={styles.chat}>
-        <div className={styles.chatheader} onClick={()=>{
-    let tranlateValue=getComputedStyle(root).getPropertyValue("--translatevalue");
-    if(tranlateValue==="230px"){
-
-      root.style.setProperty("--translatevalue","0px")
-    }else{
-      root.style.setProperty("--translatevalue","230px")
-
-    }
-
-
-}}>Chat</div>
-        <div className={styles.users}>
-          {userData.map(user=>
-            <div className={styles.user}>
-              <img src={user.profilepicture} alt="" />
-              <span>{user.name}</span>
-            </div>
-          )}
+        <div>
+          <div
+            className={styles.chatheader}
+            onClick={() => {
+              let tranlateValue =
+                getComputedStyle(root).getPropertyValue("--translatevalue");
+                tranlateValue=tranlateValue.trim()
+                console.log(tranlateValue.trim())
+              if (tranlateValue == "230px") {
+                root.style.setProperty("--translatevalue", "0px");
+              } else {
+                root.style.setProperty("--translatevalue", "230px");
+              }
+            }}
+          >
+            Chat
+          </div>
+          <div className={styles.users}>
+            {userData.map((user) => (
+              <div className={styles.user}>
+                <img src={user.profilepicture} alt="" />
+                <span>{user.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
