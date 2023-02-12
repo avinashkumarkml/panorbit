@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+<h1 align="center"> panorbit-Assessment<h1/>  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3>It is a interview assisment Project and In this repo I try to build a form with React stack technologies. For Interview process.</h3>
 
-## Available Scripts
+<div style='page-break-after: always'></div>
 
-In the project directory, you can run:
+<h3 align="center" > Want to see live preview >><h3>
+<p align="center">
+<br />
+<a target="blank" href="https://panorbit-iota.vercel.app/">Deployed Link</a>
+</p>
 
-### `npm start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### <u>Run Locally</u>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone the project
 
-### `npm test`
+```
+git clone https://github.com/avinashkumarkml/panorbit
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install npm packages
 
-### `npm run build`
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run the surver
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+View in Browser
 
-### `npm run eject`
+```
+go to http://localhost:3000
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<div style='page-break-after: always'></div>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### <u>Technologies we used</u>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- HTML
+- CSS
+- JavaScript
+- ReactJs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+All the data got stored in and called from <b>Local Stroge</b>.
 
-## Learn More
+<div style='page-break-after: always'></div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### <u>Functionalities</u>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- user page
+- User validation.
+- Profile page
+- User Details Page
+  
+  ## Some Snapshots
+![Screenshot (82)](https://user-images.githubusercontent.com/96098283/216817656-85dbc9d9-7090-452f-8f0c-716661edcf1c.png)
 
-### Code Splitting
+![Screenshot (83)](https://user-images.githubusercontent.com/96098283/216817680-54db2aa0-6e7e-4140-b8c3-8688a700d74a.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot (84)](https://user-images.githubusercontent.com/96098283/216817682-b87dcb94-cac1-40eb-9bd3-b0c197822cc1.png)
 
-### Analyzing the Bundle Size
+![Screenshot (85)](https://user-images.githubusercontent.com/96098283/216817684-ce6c4e16-003b-4338-aae6-55a9d0652d36.png)
+  
+## Please do check out our Panorbit-Assessment !
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ <h2>Contact</h2>
 
-### Making a Progressive Web App
+If you want to contact me, you can reach me through below handles.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[![linkedin](https://img.shields.io/badge/Avinash-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/avinashdeveloper/)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Thank You :sparkling_heart:
