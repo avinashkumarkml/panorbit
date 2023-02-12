@@ -1,4 +1,4 @@
-<h1 align="center"> panorbit-Assessment<h1/>  
+<h1 align="center"> Panorbit-Assessment<h1/>  
 
 <h3>It is a interview assisment Project and In this repo I try to build a form with React stack technologies. For Interview process.</h3>
 
@@ -59,13 +59,15 @@ All the data got stored in and called from <b>Local Stroge</b>.
 - User Details Page
   
   ## Some Snapshots
-![Screenshot (82)](https://user-images.githubusercontent.com/96098283/216817656-85dbc9d9-7090-452f-8f0c-716661edcf1c.png)
+![Screenshot (82)](https://miro.medium.com/v2/resize:fit:640/format:webp/1*jW_IweivX4gpMOcCUr5BJA.png)
 
-![Screenshot (83)](https://user-images.githubusercontent.com/96098283/216817680-54db2aa0-6e7e-4140-b8c3-8688a700d74a.png)
+![Screenshot (83)](https://miro.medium.com/v2/resize:fit:640/format:webp/1*bpLoCJFQbAM66u_wo985fw.png)
 
-![Screenshot (84)](https://user-images.githubusercontent.com/96098283/216817682-b87dcb94-cac1-40eb-9bd3-b0c197822cc1.png)
+![Screenshot (84)](https://miro.medium.com/v2/resize:fit:640/format:webp/1*4C9xukJPGkr98uC07MNizg.png)
 
-![Screenshot (85)](https://user-images.githubusercontent.com/96098283/216817684-ce6c4e16-003b-4338-aae6-55a9d0652d36.png)
+![Screenshot (85)](https://miro.medium.com/v2/resize:fit:640/format:webp/1*zKaJv9poCY-jpKPN2-b5pg.png)
+
+![Screenshot (85)](https://miro.medium.com/v2/resize:fit:640/format:webp/1*AJ3_h-yGgYqWD1_HYIswpA.png)
   
 ## Please do check out our Panorbit-Assessment !
 
